@@ -19,6 +19,8 @@ module Arithmetic_Unit(signal,data_in_a,data_in_b,data_out);
 				data_out = data_in_a - data_in_b;
 			else if (signal == 2'b11)
 				data_out = data_in_a*data_in_b;
+			else
+				data_out = data_in_a;
 		end
 
 endmodule
